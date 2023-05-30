@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Lato:wght@400;700;900&family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./image/logo_mediv.png" alt="logo" class="logo" />
+      <!-- <div class="nav-phone">+48 123 456 789</div> -->
+
+      <nav class="navigation">
+        <ul class="navigation-cont">
+          <li><a href="#container2">ABOUT</a></li>
+          <li><a href="#container3">SPECIALIZATIONS</a></li>
+          <li><a href="#container4">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container1 cont" id="container1">
+      <img src="./image/apteka_krzyż.png" alt="cross" class="cross1" />
+      <img src="./image/apteka_krzyż2.png" alt="cross" class="cross2" />
+      <div class="cont1-body">
+        <div class="paragraph">
+          The most professional medical care in the city
+        </div>
+        <div class="paragraph-down">
+          Find out more and make an appointment with a proven specialist today
+        </div>
+        <button type="button" class="more">Find out more</button>
+        <div class="arrow1">
+          <img src="./image/arrow.png" class="arrow" />
+        </div>
+      </div>
+    </div>
+    <div class="container2 cont" id="container2">
+      <img src="./image/bg.png" alt="background" class="back" />
+      <div class="second-main">
+        <div class="col1">
+          <div class="idk">
+            <img src="./image/heart.png" alt="heart" class="heart" />
+            <div class="text">
+              <h1>About us</h1>
+              We are a trusted institution that provides professional medical
+              care by numerous and proven specialists without delays and at a
+              reasonable price
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./image/yusupjune18.png" alt="obrazek" class="bigimg" />
+        </div>
+      </div>
+    </div>
+    <div class="container3 cont" id="container3">
+      <!--  -->
+      <div class="spec-prize" id="price-pop">
+        <img src="./image/close.png" class="close" onclick="hide()" />
+        <h1 id="type">Psychiatrist</h1>
+        <table class="prizes">
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 - 15:00</td>
+              <td>-</td>
+              <td>12:00 - 18:00</td>
+              <td>10:00 - 15:00</td>
+              <td>-</td>
+              <td>8:00 - 12:00</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="price">Price: <span id="price">170- 270</span></h2>
+        <button type="button" onclick="hide()" class="close-btn">Close</button>
+      </div>
+      <!--  -->
+      <div style="z-index: 1" class="cont3-body">
+        <h1 class="cont3-h1">Our <span>specialists</span></h1>
+        <div class="specialists">
+          <div class="row">
+            <div class="spec-el" onclick="show('Dentist', 180)">
+              <img
+                src="./image/specialists/dentist.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Dentist</div>
+            </div>
+
+            <div class="spec-el" onclick="show('Psychiatrist', 170)">
+              <img
+                src="./image/specialists/psychiatrist.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Psychiatrist</div>
+            </div>
+
+            <div class="spec-el" onclick="show('Cardiologist', 160)">
+              <img
+                src="./image/specialists/cardiologist.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Cardiologist</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="spec-el" onclick="show('Neurologist', 175)">
+              <img
+                src="./image/specialists/neurologist.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Neurologist</div>
+            </div>
+
+            <div class="spec-el" onclick="show('Laryngologist', 190)">
+              <img
+                src="./image/specialists/laryngologist.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Laryngologist</div>
+            </div>
+
+            <div class="spec-el" onclick="show('Speech therapy', 175)">
+              <img
+                src="./image/specialists/speech.png"
+                alt="dentist"
+                class="spec-img"
+              />
+              <div class="spec-desc">Speech therapy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./image/bg.png" alt="background" class="back3" />
+      <img src="./image/bg.png" alt="background" class="back2" />
+    </div>
+    <div class="container4 cont" id="container4">
+      <img src="./image/apteka_krzyż.png" alt="cross" class="cross3" />
+      <img src="./image/apteka_krzyż2.png" alt="cross" class="cross4" />
+      <div class="ctn4">
+        <div class="ctn4-content">
+          <p class="ctn4-title">You can make an appointment via:</p>
+          <div class="ctn4-contact">
+            <img src="./image/phone_white.png" class="phone" />
+            123 456 789
+          </div>
+          <div class="ctn4-contact">
+            <img src="./image/letter_white.png" class="phone" />
+            smt@gmail.com
+          </div>
+        </div>
+        <div class="ctn4-or">Or</div>
+        <div class="ctn4-form">
+          <form>
+            <label for="name" class="ctn4-form-label"
+              >First name and last name</label
+            >
+            <input type="text" name="name" id="name" />
+
+            <label for="phone" class="ctn4-form-label">Phone number</label>
+            <input type="tel" name="phone" id="phone" />
+
+            <label for="mail" class="ctn4-form-label">E-mail</label>
+            <input type="email" name="mail" id="mail" />
+
+            <label for="query" class="ctn4-form-label">Query content</label>
+            <textarea name="query" id="query"></textarea>
+            <button type="submit" class="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
